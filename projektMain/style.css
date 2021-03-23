@@ -4,38 +4,47 @@
     font-family: 'Syne Mono', monospace;;
 }
 
+header {
+    display: block;
+    width: 100vw;
+    min-height: 500px;
+}
+
 .portofolio {
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     padding: 10px 10px 10px 10px;
     opacity: 100%;
-    background-color: teal;
+    background-color: rgb(3, 56, 126);
     border: 2px solid whitesmoke;
     color: whitesmoke;
     position: relative;
     left: 5vw;
-    bottom: 3vw;
+    top: 360px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .head {
-    background-color: teal;
-    width: 100vw;
+    background: url("img/photo1.png");
+    background-color: rgb(3, 56, 126);
+    background-repeat: no-repeat;
+    background-size: 520px;
+    background-position-x: right;
 }
 
 .hello {
     left: 5vw;
-    top: 5vw;
+    top: 5px;
     position: relative;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 60px;
     color: whitesmoke;
 }
 
 .intro-1 {
     left: 5vw;
-    top: 10vw;
+    top: 100px;
     position: relative;
     text-transform: uppercase;
     font-size: 25px;
@@ -44,14 +53,9 @@
 
 .intro-2 {
     left: 5vw;
-    top: 11vw;
+    top: 110px;
     position: relative;
     text-transform: uppercase;
     font-size: 25px;
     color: whitesmoke;
-}
-
-.photo {
-    right: 50px;
-    width: 40%;
 }
