@@ -1,8 +1,18 @@
+/* General settings */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Syne Mono', monospace;
 }
+
+/* every h3 */
+h3 {
+    font-size: 32px;
+    font-weight: 300;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+/* ------------------header--------------------- */
 .head {
     text-transform: uppercase;
     box-sizing: content-box;
@@ -78,14 +88,11 @@
     right: 0;
 }
 
+/* ------------------------first section--------------------------- */
+
 .websites {
     text-align: center;
     display: inline-block;
-}
-
-.projects {
-    padding: 10px 10px 10px 10px;
-    font-size: 30px;
 }
 
 .websites > div {
@@ -103,39 +110,8 @@
     padding: 10px 10px 10px 10px;
 }
 
-.projects-examples {
-    width: 100%;
-    background-color: gray;
-    padding-bottom: 40px;
-    position: relative;
-}
+/* --------------------------third section----------------------------- */
 
-
-.projects-title {
-    text-align: center;
-    font-size: 50px;
-    margin: 30px 30px 30px 30px;
-    width: 100%;
-}
-
-.example-1 {
-    left: float;
-    width: 50%;
-    box-sizing: border-box;
-}
-.example-2 {
-    left: right;
-    width: 50%;
-    box-sizing: border-box;
-}
-
-.example-2 > h2 {
-    font-size: 40px;
-    padding-top: 60px;
-    border-bottom: 3px black solid;
-}
-
-.example-2 > p {
-    padding-top: 20px;
-    font-size: 30px;
+.projects {
+    background-color: grey;
 }
