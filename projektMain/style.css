@@ -11,7 +11,15 @@ h3 {
     font-weight: 300;
     padding: 10px 10px 10px 10px;
     text-align: center;
+    line-height: 100px;
 }
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /* ------------------header--------------------- */
 .head {
     text-transform: uppercase;
@@ -114,4 +122,179 @@ h3 {
 
 .projects {
     background-color: grey;
+}
+
+.projects > div {
+    padding-bottom: 100px;
+}
+
+.project-description-1 {
+    background-color: lightcoral;
+    width: 45%;
+    height: 24vw;
+    float: left;
+    text-align: left;
+    box-sizing: content-box
+}
+
+.project-description-2 {
+    background-color: lightseagreen;
+    width: 45%;
+    height: 24vw;
+    float: left;
+    text-align: left;
+    box-sizing: content-box
+}
+
+.project-description-3 {
+    background-color: magenta;
+    width: 45%;
+    height: 24vw;
+    float: left;
+    text-align: left;
+    box-sizing: content-box
+}
+
+.project-description-4 {
+    background-color: mediumblue;
+    width: 45%;
+    height: 24vw;
+    float: left;
+    text-align: left;
+    box-sizing: content-box
+}
+
+div > h4 {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-right: 50px;
+    font-size: 32px;
+    border-bottom: 2px black solid;
+}
+
+div > p {
+    font-size: 25px;
+    padding: 50px 50px 50px 50px;
+}
+
+.project-image {
+    width: 50%;
+    height: 24vw;
+    float: left;
+    text-align: right;
+}
+
+.project-image > img {
+    height: 100%;
+}
+
+/* --------------------section fourth motto-------------------------- */
+.motto {
+    color: whitesmoke;
+    width: 100%;
+    height: 600px;
+    background-image: url("img/motto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.motto > p {
+    padding: 100px 300px 100px 300px ;
+}
+
+.motto > p+p {
+    padding: 0px 0px 0px 0px;
+    padding-left: 45vw;
+    
+}
+
+/* --------------------section sixth hobby---------------------------- */
+.container {
+    /* adjust div size to children sizes */
+    overflow: hidden;
+}
+
+.container > img {
+    float: left;
+    width: 50%;
+}
+
+/* --------------------section seventh contact------------------------ */
+.contact {
+    background-color: black;
+    color: cornsilk;
+    /* adjust div size to children sizes */
+    overflow: hidden;    
+}
+
+.contact > div {
+    width: 50%;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+input {
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+input:nth-child(3) {
+    padding-bottom: 150px;
+}
+.sender {
+    font-size: 20px;
+    background-color: black;
+    color: wheat;
+    border: 2px solid wheat;
+    padding: 20px 40px 20px 40px;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    width: 21vw;
+}
+
+.sender:hover {
+    transition: 1s;
+    background-color: gray;
+}
+
+.name {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20vw;
+}
+.email {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 20vw;
+
+}
+.message {
+    position: absolute;
+    right: 0;
+    width: 20vw;
+    bottom: 150px;
+}
+
+.social-media > p {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 50px;
+}
+
+/* ---------------------------footer---------------------------------- */
+footer {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    line-height: 20px;
+    background-color: rgb(28, 28, 82);
+    color: blanchedalmond;
 }
