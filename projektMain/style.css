@@ -2,16 +2,34 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
-/* every h3 */
+/* max-width:
+*720px
+*980px
+*1440px */
+
+
+.wrapper {
+    align-items: center;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+    /* every h3 */
 h3 {
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 40px;
+    font-weight: 600;
     padding: 10px 10px 10px 10px;
     text-align: center;
     line-height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* clearfix */
@@ -109,19 +127,25 @@ h3 {
     box-sizing: border-box;
     padding: 10px 10px 10px 10px;
 }
+.websites > div > img {
+    width: 33%;
+}
 .technologies {
+    font-size: 20px;
     min-height: 58px;
 }
 
 .websites > div > p {
     text-align: justify;
-    padding: 10px 10px 10px 10px;
+    padding: 30px 30px 30px 30px;
+    font-size: 15px;
 }
 
-/* --------------------------third section----------------------------- */
+/* --------------------------projects section----------------------------- */
 
 .projects {
     background-color: grey;
+    
 }
 
 .projects > div {
@@ -130,43 +154,27 @@ h3 {
 
 .project-description-1 {
     background-color: lightcoral;
-    width: 45%;
     height: 24vw;
-    float: left;
+    margin-right: 10%;
+    width: 40%;
+    box-sizing: border-box;
     text-align: left;
-    box-sizing: content-box
+    float: left;
 }
 
 .project-description-2 {
-    background-color: lightseagreen;
-    width: 45%;
+    background-color: blue;
     height: 24vw;
-    float: left;
+    margin-left: 10%;
+    width: 40%;
+    box-sizing: border-box;
     text-align: left;
-    box-sizing: content-box
-}
-
-.project-description-3 {
-    background-color: magenta;
-    width: 45%;
-    height: 24vw;
     float: left;
-    text-align: left;
-    box-sizing: content-box
-}
-
-.project-description-4 {
-    background-color: mediumblue;
-    width: 45%;
-    height: 24vw;
-    float: left;
-    text-align: left;
-    box-sizing: content-box
 }
 
 div > h4 {
     padding-top: 50px;
-    padding-left: 10px;
+    padding-left: 50px;
     padding-bottom: 20px;
     margin-right: 50px;
     font-size: 32px;
@@ -174,19 +182,34 @@ div > h4 {
 }
 
 div > p {
-    font-size: 25px;
-    padding: 50px 50px 50px 50px;
+    font-size: 20px;
+    padding: 20px 50px 50px 50px;
 }
 
-.project-image {
-    width: 50%;
+.project-image-1 {
+    width: 40%;
+    margin-left: 10%;
     height: 24vw;
     float: left;
     text-align: right;
 }
 
-.project-image > img {
+.project-image-2 {
+    width: 40%;
+    margin-right: 10%;
+    height: 24vw;
+    float: left;
+    text-align: left;
+}
+
+.project-image-1 > img {
     height: 100%;
+    width: 100%;
+}
+
+.project-image-2 > img {
+    height: 100%;
+    width: 100%;
 }
 
 /* --------------------section fourth motto-------------------------- */
