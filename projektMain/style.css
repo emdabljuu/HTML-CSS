@@ -29,7 +29,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: wheat;
 }
 
 /* clearfix */
@@ -42,19 +42,18 @@ a {
 .head {
     text-transform: uppercase;
     box-sizing: content-box;
-    position: relative;
+    /* position: relative; */
     color: wheat;
+    height: 40vh;
 }
 
 .head-1 {
-    left: 0vw;
-    top: 0px;
-    height: 500px;
+    float: left;
+    height: 40vh;
     width: 50vw;
     background-color: blueviolet;
     padding: 20px 20px 20px 20px;
     box-sizing: border-box;
-    position: relative;
 }
 
 .portofolio {
@@ -65,53 +64,39 @@ a {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 20px;
-    position: absolute;
-    left: 100px;
-    bottom: 50px;
-    transition: 2s;
+    margin-top: 50px;
+    margin-left: 50px;
+    transition: 1s;
 }
 
 .portofolio:hover{
-    padding: 30px 30px 30px 30px;
+    padding: 25px 25px 25px 25px;
     font-size: 25px;
 }
 
 .hello {
     font-size: 60px;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-}
+    margin: 50px 50px 50px 50px;
+}    
 
-.intro-1 {
+.intro {
     font-size: 45px;
-    position: absolute;
-    top: 190px;
-    left: 100px;
-}
-
-.intro-2 {
-    font-size: 45px;
-    position: absolute;
-    top: 250px;
-    left: 100px;
+    margin-left: 50px;
 }
 
 .head-2 {
-    position: absolute;
-    left: 50vw;
-    top: 0px;
-    height: 500px;
+    float: left;
+    height: 40vh;
     width: 50vw;
     background-color: blueviolet;
     align-items: center;
 
 }
 .photo {
-    height: 500px;
+    height: 40vh;
     right: 0px;
     position: absolute;
-    right: 0;
+
 }
 
 /* ------------------------first section--------------------------- */
@@ -144,7 +129,8 @@ a {
 /* --------------------------projects section----------------------------- */
 
 .projects {
-    background-color: grey;
+    background-color: black;
+    color: white;
     
 }
 
@@ -178,7 +164,7 @@ div > h4 {
     padding-bottom: 20px;
     margin-right: 50px;
     font-size: 32px;
-    border-bottom: 2px black solid;
+    border-bottom: 2px white solid;
 }
 
 div > p {
@@ -225,7 +211,8 @@ div > p {
 }
 
 .motto > p {
-    padding: 100px 300px 100px 300px ;
+    padding: 50px 300px 100px 300px ;
+    font-size: 30px;
 }
 
 .motto > p+p {
@@ -321,3 +308,115 @@ footer {
     background-color: rgb(28, 28, 82);
     color: blanchedalmond;
 }
+
+/* mobile up to 720px */
+
+@media (max-width: 720px) {
+    /* header */
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hello {
+        font-size: 90%;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 20px 0px;
+        font-weight: bold;
+    }
+    .intro {
+        font-size: 90%;
+        font-weight: lighter;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .portofolio {
+        padding: 2px 2px 2px 2px;
+        margin: 20px 0px 0px 0px;
+        font-size: 90%;
+    }
+    .head-1 {
+        text-align: center;
+        width: 100vw;
+    }
+    .head-2 {
+        float:right;
+        width: 100vw;
+    }
+
+    /* technologies */
+    .websites > div {
+        width: 100%;
+    }
+    .websites > h3 {
+        font-size: 20px;
+    }
+    .technologies {
+        font-size: 15px;
+        min-height: 0px;
+    }    
+    
+    /* projects */
+    .projects > h3 {
+        font-size: 20px;
+    }
+
+    .project-description-1 > h4 {
+        font-size: 18px;
+        margin: 2px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
+    }
+
+    .project-description-1 > p {
+        font-size: 70%;
+        margin: 2px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
+    }
+
+    .project-description-2 > h4 {
+        font-size: 18px;
+        margin: 2px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
+    }
+
+    .project-description-2 > p {
+        font-size: 12px;
+        margin: 2px 2px 2px 2px;
+        padding: 2px 2px 2px 2px;
+    }
+    /* motto */
+    .motto {
+        text-align: center;
+        height: 450px;
+    }
+    .motto > p {
+        padding: 5vw 5vw 5vw 5vw ;
+        font-size: 15px;
+    }
+    
+    .motto > p+p {
+        padding: 0vw 0px 0px 0px;       
+    }
+    /* hobby */
+
+    .container > img {
+        width: 100vw;
+    }
+
+    /* contact */
+    .contact > div {
+        width: 100%;
+        height: 500px;
+        float: left;
+    }
+
+    .
+
+    .social-media > p {
+        font-size: 20px;
+    }
+    
+    /* footer */
+    footer {
+        font-size: 10px;
+    }
+}   
